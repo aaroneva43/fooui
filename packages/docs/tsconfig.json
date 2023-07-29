@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "rootDir": ".",
+    "target": "es5",
+    "lib": ["dom", "es6"],
+    "module": "es2020",
+    "typeRoots": ["./node_modules/@types", "./typings"],
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "resolveJsonModule": true,
+    "outDir": "build_dev"
+  },
+  "include": ["src/**/*"]
+}
