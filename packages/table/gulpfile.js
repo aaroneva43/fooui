@@ -21,13 +21,13 @@ function buildLess() {
     .pipe(less({ javascriptEnabled: true }))
     .pipe(postcss([require('autoprefixer')]))
     .pipe(sourcemaps.write('./'))
-    .pipe(rename('rsuite-table.css'))
+    .pipe(rename('table.css'))
     .pipe(gulp.dest(`${STYLE_DIST_DIR}`));
 }
 
 function buildCSS() {
   return gulp
-    .src(`${STYLE_DIST_DIR}/rsuite-table.css`)
+    .src(`${STYLE_DIST_DIR}/table.css`)
     .pipe(sourcemaps.init())
     .pipe(postcss())
     .pipe(rename({ suffix: '.min' }))

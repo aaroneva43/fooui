@@ -1,0 +1,7 @@
+"use strict";
+
+exports.__esModule = true;
+exports["default"] = isRTL;
+function isRTL() {
+  return typeof window !== 'undefined' && (document.body.getAttribute('dir') || document.dir) === 'rtl';
+}

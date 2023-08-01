@@ -1,0 +1,5 @@
+{
+  "watch": [".babelrc", "src/**/*.less", "src/**/*.ts", "src/**/*.tsx"],
+  "ext": "js json ts tsx less css html",
+  "ignore": ["package*.json", "es/", "lib/", "node_modules/", "dist"]
+}

@@ -5,10 +5,13 @@
   "devDependencies": {
     "@babel/core": "^7.22.6",
     "@babel/preset-env": "^7.22.6",
+    "@babel/runtime": "^7.22.6",
     "babel-loader": "^9.1.2",
+    "concurrently": "^8.2.0",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
+    "nodemon": "^3.0.1",
     "postcss-loader": "^7.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,12 +24,15 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "dev": "node scripts/start.js",
+    "dev": "cd ./packages/docs && pnpm dev",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.5"
   }
 }
